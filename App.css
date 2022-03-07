@@ -1,0 +1,67 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+}
+
+.app__searchForm {
+  margin-top: 18px;
+}
+
+.app__input{
+  padding: 6px 16px;
+  min-width: 200px;
+  max-width: 100vw;
+  font-size: 15px;
+}
+
+body {
+  margin:0;
+  background-color:#191919;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Helvetica,Sans-serif;
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.app__submit {
+  width:calc(20vw + 75px);
+  height:calc(4vw + 1px);
+  background-image: linear-gradient(90deg, #0787f7e7 0%, #650becd7 20%,#0015ffd7 50%, #2273baef 80%, #0787f7e7 100%);
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:30px;
+  font-weight:bold;
+}
+
+.app__submit:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.app__recipes{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 230px 230px;
+  align-items: baseline;
+}
+
+.app_healthLabels{
+  padding: 7px;
+  margin-left: 6px;
+  border-radius: 4px;
+}
